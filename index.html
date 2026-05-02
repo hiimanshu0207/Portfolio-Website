@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himanshu Singh — Web Developer | JS, HTML, CSS, Node.js</title>
+  <meta name="description" content="Himanshu Singh — Full-stack web developer specializing in Next.js, React, Node.js and AI-powered applications. Available for freelance and full-time opportunities." />
+  <meta name="keywords" content="Himanshu Singh, Web Developer, Next.js, React, Node.js, AI, Portfolio" />
+  <meta property="og:title" content="Himanshu Singh — Web Developer & AI Engineer" />
+  <meta property="og:description" content="Building modern web apps & scalable AI-driven solutions." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- GRID BG -->
+<div class="grid-bg"></div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-content">
+    <div class="loader-logo">HS</div>
+    <p style="color:var(--text-muted);font-size:0.8rem;margin-top:0.75rem;letter-spacing:3px">LOADING PORTFOLIO</p>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">HS.</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="mailto:hiimanshu0207@gmail.com" class="btn-hire">Hire Me</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#contact">Contact</a>
+  <a href="mailto:hiimanshu0207@gmail.com" class="btn-hire" style="margin-top:1rem">Hire Me</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <canvas id="particles-canvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-badge fade-in">
+      <span class="dot"></span>
+      Available for opportunities
+    </div>
+    <h1 class="hero-name fade-in">
+      <span class="gradient-text">Himanshu</span><br>Singh
+    </h1>
+    <p class="hero-title fade-in">Web Developer &amp; AI Engineer</p>
+    <p class="fade-in" style="color:var(--text-muted);font-family:var(--mono);font-size:0.85rem;margin-bottom:0.5rem">$ currently_working_on →</p>
+    <div id="typed-text" class="fade-in"></div>
+    <div class="hero-cta fade-in">
+      <a href="#projects" class="btn-primary">
+        <span>⚡</span> View Projects
+      </a>
+      <a href="#" class="btn-secondary" download>
+        <span>↓</span> Download Resume
+      </a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid fade-in">
+    <div class="about-image-wrap">
+      <div class="about-image-glow"></div>
+      <div class="about-image">
+        <img src="https://avatars.githubusercontent.com/u/190101079?v=4" alt="Himanshu Singh" />
+        <div class="about-image-ring"></div>
+      </div>
+      <div class="about-image-badge">👨‍💻 Open to Work</div>
+    </div>
+    <div class="about-text">
+      <p class="section-label">About Me</p>
+      <h2 class="section-title" style="font-size:clamp(1.6rem,4vw,2.8rem);margin-bottom:1.25rem">
+        Turning Ideas into<br><span class="gradient-text">Modern Web &amp; AI Systems</span>
+      </h2>
+      <p class="about-bio">
+        I build <strong style="color:var(--text-primary)">fast, scalable web applications</strong> using <strong style="color:var(--text-primary)">JavaScript, React, Node.js &amp; MongoDB</strong> — focused on clean code and real-world impact.
+      </p>
+      <p class="about-bio">
+        Currently pursuing <strong style="color:var(--text-primary)">B.Tech in Computer Science</strong> at <strong style="color:var(--accent-blue)">GLA University</strong> (2023–2027), while actively building projects and exploring <strong style="color:var(--accent-purple)">AI-powered solutions</strong>.
+      </p>
+      <p class="about-bio" style="color:var(--text-muted);font-size:0.9rem">
+        From Book Review platforms to AI Career Advisors — I ship real products that solve real problems. 🚀
+      </p>
+      <div class="about-tags">
+        <span class="tag">🧩 Full-Stack Developer</span>
+        <span class="tag">⚛️ React &amp; Next.js</span>
+        <span class="tag">🤖 AI Explorer</span>
+        <span class="tag">🔧 Problem Solver</span>
+        <span class="tag">📚 B.Tech CS 2027</span>
+        <span class="tag">🇮🇳 India</span>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number" data-target="15" data-suffix="+">0+</div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="1" data-suffix="+ yr">0</div>
+          <div class="stat-label">Dev Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="6" data-suffix="+">0+</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+      </div>
+      <div class="about-cta">
+        <a href="#projects" class="btn-primary"><span>⚡</span> View Projects</a>
+        <a href="#" class="btn-secondary" download><span>↓</span> Download Resume</a>
+        <a href="mailto:hiimanshu0207@gmail.com" class="btn-hire" style="padding:0.85rem 1.5rem;border-radius:50px;font-size:0.9rem">Hire Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="fade-in" style="text-align:center;margin-bottom:3.5rem">
+    <p class="section-label">Technical Arsenal</p>
+    <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+  </div>
+  <div class="skills-categories">
+    <div class="skill-category fade-in">
+      <h3>⚛️ Frontend</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><span class="skill-icon">⚛️</span><div class="skill-name">React</div></div>
+        <div class="skill-card"><span class="skill-icon">▲</span><div class="skill-name">Next.js</div></div>
+        <div class="skill-card"><span class="skill-icon">💨</span><div class="skill-name">Tailwind</div></div>
+        <div class="skill-card"><span class="skill-icon">📜</span><div class="skill-name">TypeScript</div></div>
+        <div class="skill-card"><span class="skill-icon">🎨</span><div class="skill-name">HTML/CSS</div></div>
+        <div class="skill-card"><span class="skill-icon">🟨</span><div class="skill-name">JavaScript</div></div>
+      </div>
+    </div>
+    <div class="skill-category fade-in">
+      <h3>🔧 Backend</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><span class="skill-icon">🟢</span><div class="skill-name">Node.js</div></div>
+        <div class="skill-card"><span class="skill-icon">🚂</span><div class="skill-name">Express.js</div></div>
+        <div class="skill-card"><span class="skill-icon">🍃</span><div class="skill-name">MongoDB</div></div>
+        <div class="skill-card"><span class="skill-icon">🐍</span><div class="skill-name">Python</div></div>
+      </div>
+    </div>
+    <div class="skill-category fade-in">
+      <h3>🛠️ Tools &amp; Platforms</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><span class="skill-icon">🐙</span><div class="skill-name">Git/GitHub</div></div>
+        <div class="skill-card"><span class="skill-icon">▲</span><div class="skill-name">Vercel</div></div>
+        <div class="skill-card"><span class="skill-icon">🤖</span><div class="skill-name">AI/ML</div></div>
+        <div class="skill-card"><span class="skill-icon">🌐</span><div class="skill-name">GitHub Pages</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="fade-in" style="text-align:center;margin-bottom:3.5rem">
+    <p class="section-label">Featured Work</p>
+    <h2 class="section-title">Projects I've <span class="gradient-text">Built</span></h2>
+  </div>
+  <div class="projects-grid">
+
+    <div class="project-card fade-in">
+      <div class="project-num">01 / Full-Stack</div>
+      <h3 class="project-title">Book Review App</h3>
+      <p class="project-desc">A full-stack book review platform where users register, log in, search books, and post reviews. Integrated with external book rating APIs to pull in community ratings.</p>
+      <div class="project-psr">
+        <strong>Problem:</strong> No simple platform for students to share book reviews.<br>
+        <strong>Solution:</strong> Built with Node.js, Express, PostgreSQL + EJS templating.<br>
+        <strong>Result:</strong> Live on Vercel with user auth and real-time reviews.
+      </div>
+      <div class="tech-badges">
+        <span class="badge">Node.js</span>
+        <span class="badge">Express</span>
+        <span class="badge">PostgreSQL</span>
+        <span class="badge">EJS</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/hiimanshu0207/book_review_app" class="project-link" target="_blank">🐙 GitHub</a>
+        <a href="https://book-review-app-sepia.vercel.app/" class="project-link" target="_blank">🚀 Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-num">02 / AI Project</div>
+      <h3 class="project-title">Career Advisor AI</h3>
+      <p class="project-desc">An AI-powered career guidance tool built with Python that provides personalised career advice, skill gap analysis, and roadmap suggestions based on user input.</p>
+      <div class="project-psr">
+        <strong>Problem:</strong> Students struggle to identify the right career path in tech.<br>
+        <strong>Solution:</strong> Python + AI model integration for dynamic recommendations.<br>
+        <strong>Result:</strong> Deployed as a web app with GitHub Pages.
+      </div>
+      <div class="tech-badges">
+        <span class="badge">Python</span>
+        <span class="badge">AI/ML</span>
+        <span class="badge">GitHub Pages</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/hiimanshu0207/career_advisor" class="project-link" target="_blank">🐙 GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-num">03 / Tool</div>
+      <h3 class="project-title">Weather Forecast App</h3>
+      <p class="project-desc">A clean weather forecast web app that fetches real-time weather data using a public API and displays temperature, humidity, and forecasts in a beautiful UI.</p>
+      <div class="project-psr">
+        <strong>Problem:</strong> Needed a minimal, fast weather UI for learning API integration.<br>
+        <strong>Solution:</strong> Vanilla JavaScript + Weather API with dynamic DOM updates.<br>
+        <strong>Result:</strong> Responsive, live on GitHub Pages.
+      </div>
+      <div class="tech-badges">
+        <span class="badge">JavaScript</span>
+        <span class="badge">REST API</span>
+        <span class="badge">HTML/CSS</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/hiimanshu0207/Weather-Forecast-App" class="project-link" target="_blank">🐙 GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-num">04 / Tool</div>
+      <h3 class="project-title">Resume Builder</h3>
+      <p class="project-desc">A browser-based resume builder that lets users fill in their details and instantly generates a formatted, downloadable resume — no sign-up required.</p>
+      <div class="project-psr">
+        <strong>Problem:</strong> Students needed a quick, free resume creation tool.<br>
+        <strong>Solution:</strong> CSS-heavy layout engine with print-to-PDF support.<br>
+        <strong>Result:</strong> Hosted on GitHub Pages, fully functional.
+      </div>
+      <div class="tech-badges">
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        <span class="badge">JavaScript</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/hiimanshu0207/Resume-Builder" class="project-link" target="_blank">🐙 GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-num">05 / Backend</div>
+      <h3 class="project-title">File Sharing with Link</h3>
+      <p class="project-desc">A Node.js application that lets users upload files and instantly generates a shareable download link — similar to WeTransfer but self-hosted.</p>
+      <div class="project-psr">
+        <strong>Problem:</strong> Quick peer-to-peer file sharing without cloud accounts.<br>
+        <strong>Solution:</strong> Node.js + Multer for file uploads with unique link generation.<br>
+        <strong>Result:</strong> Deployed and hosted on GitHub Pages.
+      </div>
+      <div class="tech-badges">
+        <span class="badge">Node.js</span>
+        <span class="badge">Express</span>
+        <span class="badge">Multer</span>
+        <span class="badge">JavaScript</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/hiimanshu0207/File-Sharing-with-Link" class="project-link" target="_blank">🐙 GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-num">06 / Portfolio</div>
+      <h3 class="project-title">Personal Portfolio v1</h3>
+      <p class="project-desc">My first personal portfolio website — a fully responsive HTML/CSS/JS site showcasing my projects, skills, and contact info. Built from scratch with no frameworks.</p>
+      <div class="project-psr">
+        <strong>Problem:</strong> Needed an online presence to showcase work to recruiters.<br>
+        <strong>Solution:</strong> Pure HTML, CSS animations, and vanilla JS for interactivity.<br>
+        <strong>Result:</strong> Live on GitHub Pages.
+      </div>
+      <div class="tech-badges">
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        <span class="badge">JavaScript</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/hiimanshu0207/Portfolio" class="project-link" target="_blank">🐙 GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="fade-in" style="text-align:center;margin-bottom:3.5rem">
+    <p class="section-label">My Journey</p>
+    <h2 class="section-title">Experience &amp; <span class="gradient-text">Education</span></h2>
+  </div>
+  <div class="timeline fade-in">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Feb 2025</div>
+      <div class="timeline-card">
+        <div class="timeline-role">Technical Fest Volunteer</div>
+        <div class="timeline-org">GLA University · Mathura, India</div>
+        <div class="timeline-desc">Volunteered at the university technical festival — coordinated events, assisted participants, and helped manage technical competitions and workshops for 500+ attendees.</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2024</div>
+      <div class="timeline-card">
+        <div class="timeline-role">Gen AI Exchange Hackathon</div>
+        <div class="timeline-org">Google Cloud · Participant</div>
+        <div class="timeline-desc">Participated in Google Cloud's Gen AI Exchange Hackathon 2025 — built an AI-powered solution using Google Cloud services, gaining hands-on experience with Gemini API and cloud deployment.</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2024</div>
+      <div class="timeline-card">
+        <div class="timeline-role">Volunteer — Leadership Summit</div>
+        <div class="timeline-org">GLA University · Mathura, India</div>
+        <div class="timeline-desc">Served as a volunteer at GLA Leadership Summit 2024, supporting event logistics, speaker coordination, and attendee experience for a campus-wide leadership conference.</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2023 — Present</div>
+      <div class="timeline-card">
+        <div class="timeline-role">B.Tech — Computer Science &amp; Engineering</div>
+        <div class="timeline-org">GLA University · Mathura, U.P., India</div>
+        <div class="timeline-desc">Pursuing B.Tech in Computer Science (2023–2027). Actively building projects, learning web technologies, and exploring AI/backend systems alongside coursework.</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Nov 2024</div>
+      <div class="timeline-card">
+        <div class="timeline-role">Started GitHub Journey</div>
+        <div class="timeline-org">github.com/hiimanshu0207</div>
+        <div class="timeline-desc">Joined GitHub and began pushing real projects — from Weather apps to AI tools. Built 13+ repositories covering JavaScript, Node.js, Python and web development.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="fade-in" style="text-align:center;margin-bottom:3.5rem">
+    <p class="section-label">Milestones</p>
+    <h2 class="section-title">Achievements &amp; <span class="gradient-text">Highlights</span></h2>
+  </div>
+  <div class="achievements-grid fade-in">
+    <div class="achievement-card">
+      <div class="achievement-icon">🚀</div>
+      <div class="achievement-value" data-target="13" data-suffix="+">0+</div>
+      <div class="achievement-label">GitHub Repos</div>
+    </div>
+    <div class="achievement-card">
+      <div class="achievement-icon">🏆</div>
+      <div class="achievement-value" data-target="1" data-suffix="">0</div>
+      <div class="achievement-label">Hackathon (Google)</div>
+    </div>
+    <div class="achievement-card">
+      <div class="achievement-icon">📜</div>
+      <div class="achievement-value" data-target="6" data-suffix="+">0+</div>
+      <div class="achievement-label">Certifications</div>
+    </div>
+    <div class="achievement-card">
+      <div class="achievement-icon">🌐</div>
+      <div class="achievement-value" data-target="3" data-suffix="">0</div>
+      <div class="achievement-label">Live Projects</div>
+    </div>
+    <div class="achievement-card">
+      <div class="achievement-icon">🤝</div>
+      <div class="achievement-value" data-target="2" data-suffix="">0</div>
+      <div class="achievement-label">Event Volunteer</div>
+    </div>
+    <div class="achievement-card">
+      <div class="achievement-icon">⭐</div>
+      <div class="achievement-value" data-target="4" data-suffix="">0</div>
+      <div class="achievement-label">GitHub Followers</div>
+    </div>
+  </div>
+  <div class="github-banner fade-in">
+    <div class="github-icon">🐙</div>
+    <div class="github-text">
+      <h3>Active on GitHub Every Day</h3>
+      <p>Maintaining a consistent contribution streak. Check out my open-source work and repositories.</p>
+    </div>
+    <div class="github-link">
+      <a href="https://github.com/hiimanshu0207" target="_blank" class="btn-primary">View GitHub →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="fade-in" style="text-align:center;margin-bottom:3.5rem">
+    <p class="section-label">Let's Connect</p>
+    <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+  </div>
+  <div class="contact-grid fade-in">
+    <div class="contact-info">
+      <h3>Open to Opportunities 🚀</h3>
+      <p>I'm currently open to freelance projects, internships, and full-time roles. If you have an exciting project or opportunity, let's talk!</p>
+      <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:2rem;">Average response time: <strong style="color:var(--accent-blue)">within 24 hours</strong></p>
+      <div class="social-links">
+        <a href="https://github.com/hiimanshu0207" target="_blank" class="social-link">
+          <span class="social-link-icon">🐙</span>
+          <div>
+            <div class="social-link-label">GitHub</div>
+            <div style="font-size:0.75rem;color:var(--text-muted)">github.com/hiimanshu0207</div>
+          </div>
+          <span style="margin-left:auto">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/hiimanshu0207/" target="_blank" class="social-link">
+          <span class="social-link-icon">💼</span>
+          <div>
+            <div class="social-link-label">LinkedIn</div>
+            <div style="font-size:0.75rem;color:var(--text-muted)">linkedin.com/in/hiimanshu0207</div>
+          </div>
+          <span style="margin-left:auto">→</span>
+        </a>
+        <a href="mailto:hiimanshu0207@gmail.com" class="social-link">
+          <span class="social-link-icon">✉️</span>
+          <div>
+            <div class="social-link-label">Email</div>
+            <div style="font-size:0.75rem;color:var(--text-muted)">hiimanshu0207@gmail.com</div>
+          </div>
+          <span style="margin-left:auto">→</span>
+        </a>
+        <a href="https://hiimanshu0207.github.io/hiimanshu0207/" target="_blank" class="social-link">
+          <span class="social-link-icon">🌐</span>
+          <div>
+            <div class="social-link-label">GitHub Profile Site</div>
+            <div style="font-size:0.75rem;color:var(--text-muted)">hiimanshu0207.github.io</div>
+          </div>
+          <span style="margin-left:auto">→</span>
+        </a>
+      </div>
+    </div>
+    <form class="contact-form" id="contact-form" novalidate>
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required />
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Project Collaboration / Job Opportunity" />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary" style="width:100%;justify-content:center;padding:1rem">
+        🚀 Send Message
+      </button>
+      <div class="form-status" id="form-status"></div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Designed &amp; built with ❤️ by <span>Himanshu Singh</span> · 2024</p>
+  <p style="margin-top:0.5rem;font-size:0.75rem">Made with HTML, CSS &amp; JavaScript</p>
+</footer>
+
+<!-- FLOATING CONTACT -->
+<a href="#contact" class="floating-contact" title="Quick Contact">✉️</a>
+
+<script src="script.js"></script>
+</body>
+</html>
